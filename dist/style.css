@@ -1,0 +1,14 @@
+/* Original airy hero composition and stationary three-stage room reveal. */
+.hero{height:100svh;min-height:680px;position:relative;overflow:hidden;isolation:isolate;touch-action:pan-y;background:#fff}
+.hero canvas{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
+.headline{position:absolute;top:16.5%;left:0;width:100%;text-align:center;pointer-events:none}
+.eyebrow{font-size:9px;letter-spacing:2.5px;margin-bottom:20px}
+.hero h1{font-size:clamp(48px,5.3vw,88px);line-height:1.01;letter-spacing:-.065em;font-weight:400;margin:0}
+.hero h1 span{color:#8e173a}
+.caption{position:absolute;bottom:11%;width:100%;text-align:center}
+.caption p{font-size:13px;line-height:1.55;margin:0 0 15px;color:#393934}
+.caption button{font-size:10px;color:#64665e;padding:4px 0}.caption button span{padding-left:13px}
+.hero-meta{position:absolute;bottom:27px;left:4.2%;right:4.2%;display:flex;justify-content:space-between;align-items:center;font-size:8px;letter-spacing:1.3px;color:#5e6158}.hero-meta>a span{margin-left:20px}
+.stages{display:flex;gap:12px;align-items:center}.stages button{font-size:8px;letter-spacing:1px;color:#5e6158;padding:8px 0}.stages button[aria-pressed=true]{color:#8e173a}.stages b{font-weight:400;color:#aaa}
+.status{position:absolute;top:50%;width:100%;text-align:center;font-size:12px;color:#777}.status:empty{display:none}
+@media(max-width:600px){.hero{min-height:700px}.headline{top:21%}.eyebrow{font-size:8px;letter-spacing:2px;margin-bottom:20px}.hero h1{font-size:54px}.caption{bottom:13%}.hero-meta{left:6%;right:6%;font-size:7px;flex-wrap:wrap;gap:14px}.stages{gap:6px}.stages button{font-size:7px}.hero-meta>span{display:none}}
